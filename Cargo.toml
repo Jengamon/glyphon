@@ -10,7 +10,7 @@ license = "MIT OR Apache-2.0 OR Zlib"
 [dependencies]
 wgpu = { version = "0.19", default-features = false }
 etagere = "0.2.10"
-cosmic-text = "0.11"
+cosmic-text = { version = "0.11", default-features = false }
 lru = "0.12.1"
 
 [dev-dependencies]
@@ -18,4 +18,4 @@ winit = { version = "0.29.10", features = ["rwh_05"] }
 pollster = "0.3.0"
 
 [features]
-default = ["wgpu/default"]
+default = ["wgpu/default", "cosmic-text/default"]
